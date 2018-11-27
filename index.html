@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>UberEats</title>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -22,7 +24,7 @@
                         </li>
                     </ul>
                     <from class="search">
-                        <input v-model="keyword" id="topSearchText" type="text" name="keyword" class="inputtext fl-l" placeholder="Search for restauran" size="30" autocomplete="off" @keydown.up.prevent="moveSelection(-1)" @keydown.down.prevent="moveSelection(1)" @focus="isFocused = true" @blur="isFocused = false">
+                        <input type="text" name="search" placeholder="Search for restaurant or cuisine" size="30">
                     </form>
                     <div class="when-to">
                         <p>When</p>
@@ -107,6 +109,7 @@
             <div class="social">
                 <div class="social">
                     <p class="social-links">
+                    <p><span class="green_octothorpe">#</span>UberEats</p>
                     <a class="social-link social-link-facebook" href="#"></a> 
                     <a class="social-link social-link-twitter" href="#"></a> 
                     <a class="social-link social-link-instagram" href="#"></a> 
