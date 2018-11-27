@@ -11,14 +11,28 @@
             <section class="main-navigation-wrapper">
                 <nav class="main-navigation">
                     <div class="main-logo">
-                        
+                        <img src="img/Restaurant/logo.svg">
                     </div>
-                    <div class="header-menu-login">
-                        <a class="signin" href="#"></a>
-                        <a class="register" href="#"></a>
+                    <ul class="header-menu-login">
+                        <li>
+                            <a class="button signin" type="submit" href="#">Sign In</a>
+                        </li>
+                        <li>
+                            <a class="button register" type="submit" href="#">Register</a>
+                        </li>
+                    </ul>
+                    <from class="search">
+                        <input v-model="keyword" id="topSearchText" type="text" name="keyword" class="inputtext fl-l" placeholder="Search for restauran" size="30" autocomplete="off" @keydown.up.prevent="moveSelection(-1)" @keydown.down.prevent="moveSelection(1)" @focus="isFocused = true" @blur="isFocused = false">
+                    </form>
+                    <div class="when-to">
+                        <p>When</p>
+                        <p>To</p>
+                        <p>ASAP</p>
+                        <span>
+                            <img src="img/Restaurant/location.svg">
+                            <p>ul. Bolshaya Dmitrov</p>
+                        </span>
                     </div>
-                    <div class="search"></div>
-                    <div class="when-to"></div>
                 </nav>
             </section>
         </div>
@@ -29,28 +43,28 @@
                 <h2>Moscow Restaurants</h2>
                 <ul>
                     <li>
-                        <img src="">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <img src="img/Stores/1-9.png">
+                        <p>Макдоналдс — Газетны</p>
+                        <p>₽₽ • Бургеры </p>
+                        <p>25 - 35 Min</p>
                     </li>
                     <li>
-                        <img src="">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <img src="img/Stores/1-8.png">
+                        <p>DimSum & Co — ЦДМ</p>
+                        <p>₽ • Японская • Китайская • Азиатская</p>
+                        <p>40 - 50 Min</p>
                     </li>
                     <li>
-                        <img src="">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <img src="img/Stores/1-7.png">
+                        <p>ДвижОК — Манежная</p>
+                        <p>₽ • Американская • Европейская</p>
+                        <p>35 - 45 Min</p>
                     </li>
                     <li>
-                        <img src="">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <img src="img/Stores/1-6.png">
+                        <p>НЯ — NHA</p>
+                        <p>₽₽ • Вьетнамская</p>
+                        <p>30 - 40 Min</p>
                     </li>
                     <!-- for tablet & desktop-->
                     <li>
@@ -88,7 +102,7 @@
     </main>
     <footer class="wrapper">
             <div class="main-logo-footer">
-                <img src="">
+                <img src="img/white-logo.svg">
             </div>
             <div class="social">
                 <div class="social">
@@ -100,26 +114,34 @@
                 </div>
             <div class="footer-link-block">
                 <p class="footer-link">
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <a href="">About UberEats</a>
+                    <a href="">Become a Delivery Partner</a>
+                    <a href="">Become a Restaurant Partner</a>
+                    <a href="">See all cities</a>
+                    <a href="">Pricing</a>
+                    <a href="">Help</a>
+                    <a href="">FAQs</a>
                 </p>
             </div>
             <div class="application">
-                <a href=""></a>
-                <a href=""></a>
+                 <a href="">
+                    <img src="img/Group.png" alt="">
+                </a>
+                <a href="">
+                    <img src="img/en_badge_web_generic-cf6dad406f.png" alt="">
+                </a>
             </div>
-            <div class="copyright">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </div>
+            <p class="copyright">
+                <span>
+                    © 2017 Uber Technologies Inc.
+                </span>
+                <span>
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                </span>
+            </p>
             <div class="back-to-header">
-                <img src="" alt="">
+                <img src="img/arrow-2.svg" alt="">
             </div>
     </footer>
 </body>
