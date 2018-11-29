@@ -9,33 +9,40 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="wrapper">
+        <div class="wrapper wrapper-mobile">
             <section class="main-navigation-wrapper">
                 <nav class="main-navigation">
-                    <div class="main-logo">
-                        <img src="img/Restaurant/logo.svg">
-                    </div>
-                    <p class="header-menu-login">
-                            <a class="button signin" type="submit" href="#">Sign In</a>
-                            <a class="button register" type="submit" href="#">Register</a>
-                    </p>
+                        <div class="main-logo">
+                            <img src="img/Restaurant/logo.svg">
+                        </div>
+                        <div class="header-menu-login">
+                                <a class="button signin" type="submit" href="#">Sign In</a>
+                                <a class="button register" type="submit" href="#">Register</a>
+                        </div>
                     <div class="search">
                         <input type="text" name="search" placeholder="Search for restaurant or cuisine" size="30">
                     </div>
                     <div class="when-to">
-                        <p>When</p>
-                        <p>To</p>
-                        <p>ASAP</p>
-                        <span>
-                            <img src="img/Restaurant/location.svg">
-                            <p>ul. Bolshaya Dmitrov</p>
-                        </span>
+                        <ul class="when-to-item">
+                            <li class="">When</li>
+                            <li class="asap">ASAP</li>
+                        </ul>
+                        <ul class="when-to-item-2"> 
+                            <li class="">To</li>
+                            <li class="asap"><img src="img/Restaurant/location.svg"> ul. Bolshaya Dmitrov,22</li>
+                        </ul>                   
+                        <!-- <p class="When-to-1">When</p>
+                        <p class="asap">ASAP</p>
+                        <p class="When-to-1">To</p>
+                        <span class="asap">
+                            <img src="img/Restaurant/location.svg"> ul. Bolshaya Dmitrov,22
+                        </span> -->
                     </div>
                 </nav>
             </section>
         </div>
     </header>
-    <main class="wrapper">
+    <main class="wrapper wrapper-mobile">
             <section class="catalog-food">
                 <h1 class="visually-hidden">UBER EATS - Moscow Restaurants</h1>
                 <h2>Moscow Restaurants</h2>
@@ -98,29 +105,29 @@
                 </ul>
             </section>
     </main>
-    <footer class="wrapper">
+    <footer class="wrapper wrapper-mobile">
             <div class="main-logo-footer">
                 <img src="img/white-logo.svg">
             </div>
             <div class="social">
                 <div class="social">
-                    <p class="social-links">
                     <p><span class="green_octothorpe">#</span>UberEats</p>
+                    <p class="social-links">
                     <a class="social-link social-link-facebook" href="#"></a> 
                     <a class="social-link social-link-twitter" href="#"></a> 
                     <a class="social-link social-link-instagram" href="#"></a> 
                     </p>
                 </div>
             <div class="footer-link-block">
-                <p class="footer-link">
-                    <a href="">About UberEats</a>
-                    <a href="">Become a Delivery Partner</a>
-                    <a href="">Become a Restaurant Partner</a>
-                    <a href="">See all cities</a>
-                    <a href="">Pricing</a>
-                    <a href="">Help</a>
-                    <a href="">FAQs</a>
-                </p>
+                <ul class="footer-link">
+                    <li><a href="">About UberEats</a></li>
+                    <li><a href="">Become a Delivery Partner</a></li>
+                    <li><a href="">Become a Restaurant Partner</a></li>
+                    <li><a href="">See all cities</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">FAQs</a></li>
+                </ul>
             </div>
             <div class="application">
                  <a href="">
@@ -130,17 +137,13 @@
                     <img src="img/en_badge_web_generic-cf6dad406f.png" alt="">
                 </a>
             </div>
-            <p class="copyright">
-                <span>
-                    © 2017 Uber Technologies Inc.
-                </span>
-                <span>
-                    <a href="">Privacy</a>
-                    <a href="">Terms</a>
-                </span>
-            </p>
+                <ul class="copyright">
+                     <li> © 2017 Uber Technologies Inc.</li>
+                     <li><a href="">Privacy</a></li>
+                     <li><a href="">Terms</a></li>
+                </ul>
             <div class="back-to-header">
-                <img src="img/arrow-2.svg" alt="">
+                <a class="arrow-footer" href="#"></a>
             </div>
     </footer>
 </body>
