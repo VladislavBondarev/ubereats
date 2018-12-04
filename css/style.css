@@ -1,6 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background: #F2F2F2;
+    /*background: #F2F2F2;*/
 }
 
 a {
@@ -18,14 +18,13 @@ ul {
 
 .button {
 	display: inline-block;
-	padding: 10px 30px; 
+	padding: 14px 15px; 
 
 	font: inherit;
 	font-weight: 500;
 	text-align: center;
 	color: #ffffff;
 	vertical-align: middle;
-	text-transform: uppercase;
 
 	background-color: #000000;
 	border: none;
@@ -66,25 +65,24 @@ ul {
 .main-logo {
 	display: inline-block;
 	background: #FFFFFF;
-	width: 105px;
+	/*width: 80px;*/
 }
 
 .header-menu-login {
 	display: inline-block;
-	background: #FFFFFF;
-	width: 405px;
+	font-size: 11px;
+	line-height: 13px;
+	/*width: 70px;*/
 }
 
 .signin {
-	width: 72px;
-    height: 20px;
-    border: 1px solid #E0E0E0;
-	border-radius: 2px;
+    /*border: 1px solid #E0E0E0;*/
+	/*border-radius: 2px;*/
 	background: #FFFFFF;
 	color: #1D1D1D; 
 	text-align: center;
-	margin-left: 45px;
-	margin-right: 10px;
+	margin-left: 35px;
+	margin-right: 10px;	
 }
 
 
@@ -97,7 +95,7 @@ ul {
     border-radius: 4px;
     line-height: 24px;
     font-size: 16px;
-    background-color: #F2F2F2;
+    /*background-color: #F2F2F2;*/
     background-image: url(../img/Stores/search-2.svg);
     background-position: 10px 15px; 
     background-repeat: no-repeat;
@@ -118,8 +116,7 @@ ul {
 	border-radius: 2px;
 
 	padding: 10px 5px;
-	display: inline;
-	margin-top: 200px;
+	display: inline-block;
 }
 
 .when-to-item {
