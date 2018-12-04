@@ -42,19 +42,20 @@ ul {
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   body { 
   }
-  .wrapper {
+   {
 
   }
-}
+}*/
 
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
-.main-navigation {
+.main-navigation-wrapper {
+	margin-top: 15px;
 }
 
 .header-menu-login {
@@ -87,6 +88,7 @@ ul {
 
 
 
+
 .search input[type=text] {
     width: 100%;
     box-sizing: border-box;
@@ -99,11 +101,17 @@ ul {
     background-image: url(../img/Stores/search-2.svg);
     background-position: 10px 15px; 
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px; 
+    padding: 12px 20px 12px 40px;
+}
+
+.search {
+	margin-top: 30px;
+	margin-bottom: 20px; 
 }
 
 .when-to {
 	display: flex;
+	font-size: 11px;
 }
 
 .When-to-1 {
@@ -115,12 +123,21 @@ ul {
 	box-sizing: border-box;
 	border-radius: 2px;
 
-	padding: 10px 5px;
+	padding: 8px 15px;
 	display: inline-block;
+	margin-top: 8px;
+
+	line-height: 24px;
+    font-size: 13px;
+}
+
+.asap-2 {
+	padding: 8px 10px;
+	padding-right: 45px;
 }
 
 .when-to-item {
-	
+	margin-right: 15px;
 }
 
 
@@ -128,10 +145,37 @@ ul {
 .wrapper-mobile {
 	max-width: 308px;
     margin: 0 auto;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 
 /* --------------------------------------------------------main------------------------- */
+.catalog-food {
+	margin-top: 40px;
+}
+.name-food, .price, .description {
+	margin: 0;
+	margin-top: 5px;
+}
+
+
+.name-food {
+	line-height: 24px;
+    font-size: 16px;
+}
+
+
+.price {
+	margin-bottom: 35px;
+	line-height: 21px;
+    font-size: 13px;
+}
+.description  {
+	color: #626262;
+	line-height: 21px;
+    font-size: 14px;
+}
 
 
 /*--------------------------------------------footer----------------------------------------*/
@@ -151,6 +195,26 @@ footer a {
 	border-bottom: 1px solid #757575;
 	
 }
+
+
+.language {
+	background-color: #3B3B3B;
+	background-image: url('../img/world-1.svg'),url('../img/Shape_1.svg');
+	background-repeat: no-repeat;
+	background-position: 25px 15px, 155px 20px; 
+
+
+	padding: 15px 50px;
+
+	padding-right: 75px;
+
+	border: none;
+	color: #FFFFFF;
+	font-size: 13px;
+
+	margin-top: 30px;
+}
+
 
 .green_octothorpe {
 	color: #49A144;
@@ -214,8 +278,27 @@ footer a {
 	margin-left: 240px;
 }*/
 
+
+.copyright {
+	display: inline-block;
+}
+
 .back-to-header {
-	width: 15px;
-	height: 24px;
-	background-image: url(../img/arrow-2.svg);
+	position: relative;
+}
+
+.arrow-footer {
+	display: inline-block;
+	position: absolute;
+	left: 240px;
+	bottom: 10px;
+	width: 64px;
+	height: 64px;
+	
+	background-color: #59BD5A;
+	background-image: url('../img/arrow-1.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+
+	border: none;
 }
